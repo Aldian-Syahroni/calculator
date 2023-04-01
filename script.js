@@ -11,7 +11,9 @@ function pushBtn(obj){
     inputNumber.innerHTML = "0";
  }else if(pushed == "%"){
     inputNumber.innerHTML = inputNumber.innerHTML * 0.01;
- }else {
+ }else if(pushed == "÷"){
+   inputNumber.innerHTML += "/";
+ } else{
     if(inputNumber.innerHTML == "0"){
         inputNumber.innerHTML = pushed;
     }else{
